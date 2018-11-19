@@ -1,0 +1,45 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "Modern monitoring & analytics"
+theme = "hugo-lamp"
+googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
+
+[params]
+  subtitle = "See inside any stack, any app, at any scale, anywhere."
+  author = "Michael Luo"
+  logo = "/img/avatar.jpg"
+  description = "A light responsive Hugo AMP theme for blogger"
+  paginate = 10
+
+  # Publisher
+  ## adsensePublisher = "ca-pub-XXX"    # Required if you want to include Google Adsense
+  adsenseSlot = "XXX"                   # Required slot to display ads
+  adsenseSlotSticky = "XXX"             # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don't want display sticky ads
+
+  # SEO configs
+  seotitle = "Hugo Blog Title (SEO Version)"
+  googleSiteVerification = "google_site_verification_code"    # Google Webmaster
+  msValidate = "bing_site_verification_code"                  # Bing Webmaster
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[[menu.main]]
+  name = "PRODUCT"
+  weight = 1
+[[menu.main]]
+  name = "DOCS"
+  weight = 2
+[[menu.main]]
+  name = "PRICING"
+  weight = 3
+[[menu.main]]
+  name = "CUSTOMERS"
+  weight = 4
+[[menu.main]]
+  name = "ABOUT"
+  weight = 5
+[[menu.main]]
+  name = "BLOG"
+  weight = 5
