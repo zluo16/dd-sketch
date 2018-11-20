@@ -7,7 +7,7 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
 [params]
   subtitle = "See inside any stack, any app, at any scale, anywhere."
   author = "Michael Luo"
-  logo = "/img/avatar.jpg"
+  logo = "/img/dd_logo_white.png"
   description = "A light responsive Hugo AMP theme for blogger"
   paginate = 10
 
@@ -42,4 +42,4 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
   weight = 5
 [[menu.main]]
   name = "BLOG"
-  weight = 5
+  weight = 6
