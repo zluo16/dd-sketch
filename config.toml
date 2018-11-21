@@ -21,6 +21,14 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
   googleSiteVerification = "google_site_verification_code"    # Google Webmaster
   msValidate = "bing_site_verification_code"                  # Bing Webmaster
 
+  infrastructure_price = "$15"
+  apm_price = "$31"
+  logs_management_price = "$1.27"
+
+  infrastructure_sub = "Centralize your monitoring of systems and services"
+  apm_sub = "Centralize your monitoring of systems and services"
+  lm_sub = "Analyze and explore log data in context"
+
 [taxonomies]
   tag = "tags"
   category = "categories"
