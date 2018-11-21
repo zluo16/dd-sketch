@@ -29,6 +29,27 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
   apm_sub = "Centralize your monitoring of systems and services"
   lm_sub = "Analyze and explore log data in context"
 
+  [[menu.infra]]
+    name = "250+ integrations"
+  [[menu.infra]]
+    name = "Out-of-the-box dashboards"
+  [[menu.infra]]
+    name = "15-month metric retention"
+
+  [[menu.apm]]
+    name = "Java, Ruby, Python, Go, Node, and more"
+  [[menu.apm]]
+    name = "Out-of-the-box application health dashboards"
+  [[menu.apm]]
+    name = "1 million trace events per host location"
+
+  [[menu.lm]]
+    name = "Collect from any source"
+  [[menu.lm]]
+    name = "Automatied & custom testing process"
+  [[menu.lm]]
+    name = "Fully integrated with Infrastructure and APM"
+
 [taxonomies]
   tag = "tags"
   category = "categories"

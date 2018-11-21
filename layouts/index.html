@@ -16,18 +16,37 @@
           <h1>{{ .Site.Params.infrastructure_price }}</h1>
           <p>Per host, per month*</p>
           <p>{{ .Site.Params.infrastructure_sub }}</p>
+          <ul>
+          {{ range .Site.Menus.infra }}
+            <li><p>{{ .Name }}</p></li>
+          {{ end }}
+          </ul>
         </span>
         <span class="col-sm">
           <p>APM</p>
           <h1>{{ .Site.Params.apm_price }}</h1>
           <p>Per host, per month*</p>
           <p>{{ .Site.Params.apm_sub }}</p>
+          <ul>
+          {{ range .Site.Menus.apm }}
+            <li>
+              <p>{{ .Name }}</p>
+            </li>
+          {{ end }}
+          </ul>
         </span>
         <span class="col-sm">
           <p>LOGS MANAGEMENT</p>
           <h1>{{ .Site.Params.logs_management_price }}</h1>
           <p>Per host, per month*</p>
           <p>{{ .Site.Params.lm_sub }}</p>
+          <ul>
+          {{ range .Site.Menus.lm }}
+            <li>
+              <p>{{ .Name }}</p>
+            </li>
+          {{ end }}
+          </ul>
         </span>
       </div>
     </div>
