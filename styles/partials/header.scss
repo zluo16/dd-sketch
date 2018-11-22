@@ -179,6 +179,22 @@
   }
 }
 
+.header-container {
+  display: flex;
+  margin-right: 4%;
+  margin-top: 1.5%;
+}
+
 .heading {
   width: 40%;
+
+  h1 {
+    font-size: $size-1;
+    font-weight: $weight-semibold;
+  }
+
+  p.subtitle {
+    font-size: 3rem;
+    font-weight: $weight-normal;
+  }
 }

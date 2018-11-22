@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
-  <span class="header-container">
-    <section class="main entry-list">
+  <section class="main entry-list">
+    <section class="header-container">
       <div class="heading" style="padding-left: 0px; width: 40%">
       {{ if eq .Kind "home" }}
         <h1 class="title">{{ .Site.Title }}</h1>
@@ -23,7 +23,7 @@
                 <li>{{ .Name }}</li>
               {{ end }}
               </ul>
-              <p class="text-purple position-bottom"><a href="#">See Details</a></p>
+              <p class="position-bottom"><a class="text-purple" href="#">See Details</a></p>
             </section>
             <section class="price-table-divided col-sm">
               <p class="text-green">APM</p>
@@ -36,7 +36,7 @@
                 <li>{{ .Name }}</li>
               {{ end }}
               </ul>
-              <p class="text-green position-bottom"><a href="#">See Details</a></p>
+              <p class="position-bottom"><a class="text-green" href="#">See Details</a></p>
             </section>
             <section class="col-sm">
               <p class="text-red">LOGS MANAGEMENT</p>
@@ -49,12 +49,12 @@
                 <li>{{ .Name }}</li>
               {{ end }}
               </ul>
-              <p class="text-red position-bottom"><a href="#">See Details</a></p>
+              <p class="position-bottom"><a class="text-red" href="#">See Details</a></p>
             </section>
           </div>
         </div>
       </section>
-    </span>
+    </section>
     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") (index .Site.Params "paginate" | default 10) }}
     {{ if ne $paginator.TotalPages 0 }}
       {{ range $paginator.Pages.ByDate.Reverse }}
