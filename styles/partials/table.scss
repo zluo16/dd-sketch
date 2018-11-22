@@ -77,7 +77,8 @@ table {
   font-size: $card-sub-font-size;
   box-shadow: 0.5px 5px 5px 1px $box-shadow-dark;
   position: relative;
-  padding: 1.7rem;
+  padding: 1.7rem 1rem 1.7rem 0.5rem;
+  max-width: 47rem;
   height: 100%;
   flex: 3;
 
@@ -92,6 +93,11 @@ ul.pt-dashed-list {
   padding: 0;
 }
 
+ul.pt-dashed-list > li {
+  text-indent: 5px;
+}
+
 ul.pt-dashed-list > li:before {
   content: "-";
+  text-indent: -5px;
 }
