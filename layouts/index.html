@@ -10,47 +10,48 @@
       {{ end }}
         <p class="subtitle">{{ .Site.Params.subtitle }}</p>
       </div>
-      <div class="price-table" style="width: 50%">
-        <div class="row">
-          <section class="price-table-divided col-sm">
-            <p class="text-purple">INFRASTRUCTRE</p>
-            <p style="margin-bottom: 0">Starting at</p>
-            <h1>{{ .Site.Params.infrastructure_price }}</h1>
-            <p>Per host, per month*</p>
-            <p>{{ .Site.Params.infrastructure_sub }}</p>
-            <ul class="pt-dashed-list">
-            {{ range .Site.Menus.infra }}
-              <li>{{ .Name }}</li>
-            {{ end }}
-            </ul>
-            <p class="text-purple position-bottom"><a href="#">See Details</a></p>
-          </section>
-          <section class="price-table-divided col-sm">
-            <p class="text-green">APM</p>
-            <p style="margin-bottom: 0">Starting at</p>
-            <h1>{{ .Site.Params.apm_price }}</h1>
-            <p>Per host, per month*</p>
-            <p>{{ .Site.Params.apm_sub }}</p>
-            <ul class="pt-dashed-list">
-            {{ range .Site.Menus.apm }}
-              <li>{{ .Name }}</li>
-            {{ end }}
-            </ul>
-            <p class="text-green position-bottom"><a href="#">See Details</a></p>
-          </section>
-          <section class="col-sm">
-            <p class="text-red">LOGS MANAGEMENT</p>
-            <p style="margin-bottom: 0">Starting at</p>
-            <h1>{{ .Site.Params.logs_management_price }}</h1>
-            <p>Per host, per month*</p>
-            <p>{{ .Site.Params.lm_sub }}</p>
-            <ul class="pt-dashed-list">
-            {{ range .Site.Menus.lm }}
-              <li>{{ .Name }}</li>
-            {{ end }}
-            </ul>
-            <p class="text-red position-bottom"><a href="#">See Details</a></p>
-          </section>
+        <div class="price-table" style="width: 50%">
+          <div class="row">
+            <section class="price-table-divided col-sm">
+              <p class="text-purple">INFRASTRUCTRE</p>
+              <p style="margin-bottom: 0">Starting at</p>
+              <h1>{{ .Site.Params.infrastructure_price }}</h1>
+              <p>Per host, per month*</p>
+              <p>{{ .Site.Params.infrastructure_sub }}</p>
+              <ul class="pt-dashed-list">
+              {{ range .Site.Menus.infra }}
+                <li>{{ .Name }}</li>
+              {{ end }}
+              </ul>
+              <p class="text-purple position-bottom"><a href="#">See Details</a></p>
+            </section>
+            <section class="price-table-divided col-sm">
+              <p class="text-green">APM</p>
+              <p style="margin-bottom: 0">Starting at</p>
+              <h1>{{ .Site.Params.apm_price }}</h1>
+              <p>Per host, per month*</p>
+              <p>{{ .Site.Params.apm_sub }}</p>
+              <ul class="pt-dashed-list">
+              {{ range .Site.Menus.apm }}
+                <li>{{ .Name }}</li>
+              {{ end }}
+              </ul>
+              <p class="text-green position-bottom"><a href="#">See Details</a></p>
+            </section>
+            <section class="col-sm">
+              <p class="text-red">LOGS MANAGEMENT</p>
+              <p style="margin-bottom: 0">Starting at</p>
+              <h1>{{ .Site.Params.logs_management_price }}</h1>
+              <p>Per host, per month*</p>
+              <p>{{ .Site.Params.lm_sub }}</p>
+              <ul class="pt-dashed-list">
+              {{ range .Site.Menus.lm }}
+                <li>{{ .Name }}</li>
+              {{ end }}
+              </ul>
+              <p class="text-red position-bottom"><a href="#">See Details</a></p>
+            </section>
+          </div>
         </div>
       </section>
     </span>

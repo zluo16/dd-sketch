@@ -75,6 +75,7 @@ table {
 .price-table {
   background-color: $grey-light;
   font-size: $card-sub-font-size;
+  box-shadow: 0.5px 5px 5px 1px $box-shadow-dark;
   position: relative;
   padding: 1.7rem;
   height: 100%;
