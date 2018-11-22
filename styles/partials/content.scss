@@ -267,7 +267,22 @@
   }
 }
 
-.price-table {
-  background-color: $grey-light;
-  font-size: $card-sub-font-size;
+.text {
+  
+  &-purple {
+    color: $purple;
+  }
+
+  &-green {
+    color: $green;
+  }
+
+  &-red {
+    color: $red;
+  }
+}
+
+p.position-bottom {
+  position: absolute;
+  bottom: 0;
 }

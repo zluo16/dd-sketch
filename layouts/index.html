@@ -1,55 +1,59 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
-  <section class="main entry-list">
-    <section class="container-fluid" style="padding-left: 0px; width: 40%; margin-left: 0">
-    {{ if eq .Kind "home" }}
-      <h1 class="title"><a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">{{ .Site.Title }}</a></h1>
-    {{ else }}
-      <h2 class="title"><a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">{{ .Site.Title }}</a></h2>
-    {{ end }}
-      <p class="subtitle">{{ .Site.Params.subtitle }}</p>
-    </section>
-    <div class="price-table container-fluid">
-      <div class="row">
-        <span class="col-sm">
-          <p>INFRASTRUCTRE</p>
-          <h1>{{ .Site.Params.infrastructure_price }}</h1>
-          <p>Per host, per month*</p>
-          <p>{{ .Site.Params.infrastructure_sub }}</p>
-          <ul>
-          {{ range .Site.Menus.infra }}
-            <li><p>{{ .Name }}</p></li>
-          {{ end }}
-          </ul>
-        </span>
-        <span class="col-sm">
-          <p>APM</p>
-          <h1>{{ .Site.Params.apm_price }}</h1>
-          <p>Per host, per month*</p>
-          <p>{{ .Site.Params.apm_sub }}</p>
-          <ul>
-          {{ range .Site.Menus.apm }}
-            <li>
-              <p>{{ .Name }}</p>
-            </li>
-          {{ end }}
-          </ul>
-        </span>
-        <span class="col-sm">
-          <p>LOGS MANAGEMENT</p>
-          <h1>{{ .Site.Params.logs_management_price }}</h1>
-          <p>Per host, per month*</p>
-          <p>{{ .Site.Params.lm_sub }}</p>
-          <ul>
-          {{ range .Site.Menus.lm }}
-            <li>
-              <p>{{ .Name }}</p>
-            </li>
-          {{ end }}
-          </ul>
-        </span>
+  <span class="header-container">
+    <section class="main entry-list">
+      <div class="heading" style="padding-left: 0px; width: 40%">
+      {{ if eq .Kind "home" }}
+        <h1 class="title">{{ .Site.Title }}</h1>
+      {{ else }}
+        <h2 class="title">{{ .Site.Title }}</h2>
+      {{ end }}
+        <p class="subtitle">{{ .Site.Params.subtitle }}</p>
       </div>
-    </div>
+      <div class="price-table" style="width: 50%">
+        <div class="row">
+          <section class="price-table-divided col-sm">
+            <p class="text-purple">INFRASTRUCTRE</p>
+            <p style="margin-bottom: 0">Starting at</p>
+            <h1>{{ .Site.Params.infrastructure_price }}</h1>
+            <p>Per host, per month*</p>
+            <p>{{ .Site.Params.infrastructure_sub }}</p>
+            <ul class="pt-dashed-list">
+            {{ range .Site.Menus.infra }}
+              <li>{{ .Name }}</li>
+            {{ end }}
+            </ul>
+            <p class="text-purple position-bottom"><a href="#">See Details</a></p>
+          </section>
+          <section class="price-table-divided col-sm">
+            <p class="text-green">APM</p>
+            <p style="margin-bottom: 0">Starting at</p>
+            <h1>{{ .Site.Params.apm_price }}</h1>
+            <p>Per host, per month*</p>
+            <p>{{ .Site.Params.apm_sub }}</p>
+            <ul class="pt-dashed-list">
+            {{ range .Site.Menus.apm }}
+              <li>{{ .Name }}</li>
+            {{ end }}
+            </ul>
+            <p class="text-green position-bottom"><a href="#">See Details</a></p>
+          </section>
+          <section class="col-sm">
+            <p class="text-red">LOGS MANAGEMENT</p>
+            <p style="margin-bottom: 0">Starting at</p>
+            <h1>{{ .Site.Params.logs_management_price }}</h1>
+            <p>Per host, per month*</p>
+            <p>{{ .Site.Params.lm_sub }}</p>
+            <ul class="pt-dashed-list">
+            {{ range .Site.Menus.lm }}
+              <li>{{ .Name }}</li>
+            {{ end }}
+            </ul>
+            <p class="text-red position-bottom"><a href="#">See Details</a></p>
+          </section>
+        </div>
+      </section>
+    </span>
     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") (index .Site.Params "paginate" | default 10) }}
     {{ if ne $paginator.TotalPages 0 }}
       {{ range $paginator.Pages.ByDate.Reverse }}

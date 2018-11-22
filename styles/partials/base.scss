@@ -11,8 +11,8 @@ body {
 
 a {
   color: $text-link;
-  text-decoration: none;
-  font-weight: $weight-bold;
+  text-decoration: underline;
+  font-weight: $weight-semibold;
 
   &:focus,
   &:hover {

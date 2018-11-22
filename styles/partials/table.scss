@@ -71,3 +71,26 @@ table {
     border-bottom-right-radius: $radius-large;
   }
 }
+
+.price-table {
+  background-color: $grey-light;
+  font-size: $card-sub-font-size;
+  position: relative;
+  padding: 1.7rem;
+  height: 100%;
+  flex: 3;
+
+  &-divided {
+    border-right: 1px solid $grey;
+  }
+}
+
+ul.pt-dashed-list {
+  list-style-type: none;
+  margin-bottom: 3rem;
+  padding: 0;
+}
+
+ul.pt-dashed-list > li:before {
+  content: "-";
+}
