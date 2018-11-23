@@ -1,0 +1,12 @@
+<article class="entry-single" style="
+  background: 
+    linear-gradient(
+      {{ .Params.background }},
+      {{ .Params.background }}
+    ),
+    url({{ .Params.cover }});
+  background-position: center top;
+">
+  <h3 class="entry-title">{{ .Title }}</h3>
+  <p class="entry-summary">{{ .Summary | plainify | htmlUnescape }}</p>
+</article>
