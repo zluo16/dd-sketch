@@ -192,10 +192,12 @@
   h1 {
     font-size: $size-1;
     font-weight: $weight-semibold;
+    line-height: 3.4rem;
   }
 
   p.subtitle {
     font-size: 2rem;
     font-weight: $weight-normal;
+    line-height: 2.7rem;
   }
 }
