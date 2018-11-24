@@ -1,0 +1,13 @@
+<section class="entry-car">
+  <h3 class="entry-car-title">{{ .Site.Data.carousel.title }}</h3>
+  <section class="entry-car-summary">
+    <p class="entry-car-text">{{ .Site.Data.carousel.text }}</p>
+    {{ partial "right-arrow.html" . }}
+  </section>
+  <p><a class="text-purple" style="font-weight: 300" href="#">Read More</a></p>
+  <div class="entry-car-carousel">
+    {{ range .Site.Data.carousel.images }}
+    <img class="entry-car-carousel-slide" src="{{ . }}" />
+    {{ end }}
+  </div>
+</section>

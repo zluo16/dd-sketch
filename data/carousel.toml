@@ -1,0 +1,6 @@
+title = "Observability"
+text = "With turn-key integrations, Datadog seamlessly aggresgates metrics and events across the full devops stack"
+images = [
+  "/img/home-observability.png",
+  "/img/home-dashboards.png"
+]

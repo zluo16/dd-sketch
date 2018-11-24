@@ -188,11 +188,17 @@
 .heading {
   width: 50%;
   margin-right: 5%;
+  position: relative;
 
   h1 {
     font-size: $size-1;
     font-weight: $weight-semibold;
     line-height: 3.4rem;
+  }
+
+  button {
+    position: absolute;
+    bottom: 0;
   }
 
   p.subtitle {
