@@ -79,7 +79,18 @@ table {
   position: relative;
   padding: 1.7rem 1rem 1.7rem 0.5rem;
   height: 100%;
+  width: 400px;
   flex: 3;
+
+  @media screen and (max-width: 1250px) {
+    width: 34.5rem;
+    margin-left: 0 !important;
+  }
+
+  @media screen and (max-width: 415px) {
+    visibility: hidden;
+    height: 0;
+  }
 
   &-divided {
     border-right: 1px solid $grey;

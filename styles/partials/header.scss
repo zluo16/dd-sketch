@@ -24,6 +24,7 @@
   transition: all $easing $speed;
 
   @media screen and (max-width: $tablet) {
+    background: $purple;
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -93,13 +94,13 @@
   }
 
   &-toggle {
-    border: none;
+    border: 2px solid $white;
     outline: none;
     font-size: $size-3;
-    background-color: transparent;
+    background-color: $purple;
     color: $white;
     position: absolute;
-    top: 1rem;
+    top: 0.5rem;
     right: 1rem;
 
     @media screen and (min-width: $tablet) {
@@ -183,12 +184,27 @@
   display: flex;
   margin-right: 4%;
   margin-top: 1.5%;
+
+  @media screen and (max-width: 1250px) {
+    display: block;
+  }
 }
 
 .heading {
-  width: 50%;
+  width: 20rem;
   margin-right: 5%;
   position: relative;
+
+  @media screen and (max-width: 1250px) {
+    width: 34.5rem;
+    height: 17.7rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @media screen and (max-width: 415px) {
+    width: 23.9rem;
+    height: 20.7rem;
+  }
 
   h1 {
     font-size: $size-1;

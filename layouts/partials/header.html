@@ -1,5 +1,5 @@
 <section class="header-container">
-  <div class="heading" style="padding-left: 0px; width: 20rem">
+  <div class="heading" style="padding-left: 0px;">
     {{ if eq .Kind "home" }}
     <h1 class="title">{{ .Site.Title }}</h1>
     {{ else }}
@@ -8,7 +8,7 @@
     <p class="subtitle">{{ .Site.Params.subtitle }}</p>
     <button class="btn btn-outline-primary btn-lg w-100" style="height: 20%; border-width: 2px">Try Free</button>
   </div>
-  <div class="price-table row" style="width: 400px">
+  <div class="price-table row" style="">
     <section class="price-table-divided col-sm">
       <p class="text-purple">INFRASTRUCTRE</p>
       <p style="margin-bottom: 0">Starting at</p>
