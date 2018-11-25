@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://d1w28k6w24ve7h.cloudfront.net/"
 languageCode = "en-us"
 title = "Modern monitoring & analytics"
 theme = "hugo-lamp"
