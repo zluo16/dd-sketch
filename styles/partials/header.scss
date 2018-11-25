@@ -95,6 +95,10 @@
         font-weight: bold;
       }
     }
+
+    @media (min-width: $tablet) and (max-width: $desktop) {
+      padding-left: 2.5rem;
+    }
   }
 
   &-toggle {
@@ -208,6 +212,11 @@
   @media screen and (max-width: 415px) {
     width: 23.9rem;
     height: 20.7rem;
+  }
+
+  @media screen and (max-width: 376px) {
+    width: 344px;
+    height: 24rem;
   }
 
   h1 {

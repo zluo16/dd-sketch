@@ -2,9 +2,19 @@
 .entry {
   width: 76.7rem;
   margin-bottom: 10rem;
+  margin-left: 20rem;
+
+  @media screen and (max-width: $widescreen) {
+    margin-left: 17rem;
+  }
 
   @media screen and (max-width: $tablet) {
     padding-top: $space-large;
+    margin-left: 2rem;
+  }
+
+  @media screen and (max-width: 415px) {
+    margin-left: 0px;
   }
 
   &-list {
@@ -25,6 +35,10 @@
     @media screen and (max-width: 415px) {
       width: 23.9rem;
       padding: 48px 40px 0;
+    }
+
+    @media screen and (max-width: 376px) {
+      width: 344px;
     }
 
     &:hover {
@@ -92,6 +106,10 @@
       height: 41.9625rem;
     }
 
+    @media screen and (max-width: 376px) {
+      width: 344px;
+    }
+
     &:hover {
       box-shadow: 0px 1px 15px 0 $box-shadow-dark, 0px 10px 20px 0 $box-shadow-dark;
     }
@@ -104,6 +122,10 @@
 
       @media screen and (max-width: 415px) {
         width: 23.9rem;
+      }
+
+      @media screen and (max-width: 376px) {
+        width: 344px;
       }
 
       &-slide {
@@ -199,6 +221,10 @@
       padding: 2.5rem 1.4rem 0 1rem;
       width: 382.4px;
       height: 410.86px;
+    }
+
+    @media screen and (max-width: 376px) {
+      width: 344px;
     }
   }
 
