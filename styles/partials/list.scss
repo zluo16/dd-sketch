@@ -16,6 +16,8 @@
     margin: 25px 25px 0 0;
     box-shadow: 0.5px 5px 5px 1px $box-shadow-dark;
     display: inline-block;
+    transition-property: all;
+    transition-duration: 300ms;
     padding: 60px 60px 0;
     height: 17.7rem;
     width: 34.5rem;
@@ -26,7 +28,7 @@
     }
 
     &:hover {
-      box-shadow: 0px 1px 15px 0 rgba(137, 146, 177, 0.15), 0px 10px 20px 0 rgba(137, 146, 177, 0.15);
+      box-shadow: 0px 1px 15px 0 $box-shadow-dark, 0px 10px 20px 0 $box-shadow-dark;
     }
   }
 
@@ -75,6 +77,8 @@
     height: 36.9625rem;
     display: inline-block;
     position: absolute;
+    transition-property: all;
+    transition-duration: 300ms;
     box-shadow: 0.5px 5px 5px 1px $box-shadow-dark;
     padding: 1.5rem 1rem 1.7rem 1.5rem;
 
@@ -86,6 +90,10 @@
     @media screen and (max-width: 415px) {
       width: 23.9rem;
       height: 41.9625rem;
+    }
+
+    &:hover {
+      box-shadow: 0px 1px 15px 0 $box-shadow-dark, 0px 10px 20px 0 $box-shadow-dark;
     }
 
     &-carousel {
@@ -131,6 +139,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    transition-property: all;
+    transition-duration: 300ms;
 
     @media screen and (max-width: 1250px) {
       margin: 647px 25px 0 0;
@@ -142,6 +152,10 @@
       margin: 214px 25px 0 0;
       width: 382.4px;
       height: 509.86px;
+    }
+
+    &:hover {
+      box-shadow: 0px 1px 15px 0 $box-shadow-dark, 0px 10px 20px 0 $box-shadow-dark;
     }
   }
 
@@ -216,8 +230,14 @@
 div.arrow-svg {
   margin-top: 2rem;
   display: block;
+  opacity: 0.8;
   float: right;
   width: 41px;
+
+  &:focus,
+  &:hover {
+    opacity: 1;
+  }
 }
 
 div.overlay {

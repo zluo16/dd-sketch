@@ -75,12 +75,16 @@
 
     a {
       font-weight: $weight-light;
-      opacity: .8;
+      opacity: 0.8;
       color: $white;
+      transition-property: all;
+      transition-duration: 300ms;
 
       &:focus,
       &:hover {
         opacity: 1;
+        text-decoration: none;
+        color: $grey-light;
       }
     }
 
